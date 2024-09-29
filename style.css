@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Lexend;
+    src: url('./media/fonts/Lexend.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('./media/fonts/Nunito.ttf');
+}
+
+@font-face {
+    font-family: Nunito Italic;
+    src: url('./media/fonts/NunitoItalic.ttf');
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    padding-top: 50px;
+    background-color: #303030;
+    color: white;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Lexend, sans-serif;
+}
+
+titlebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(249, 85, 255);
+    color: white;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+a, a:visited {
+    margin: 0;
+    color: white;
+    text-decoration: underline;
+    box-shadow: inset 0px 0px 0px 0px white;
+    transition: text-decoration 0.3s;
+}
+a:hover, a:active {
+    text-decoration: none;
+}
+
+pad {
+    padding: 5px;
+}
+
+section {
+    width: 100vw;
+    padding: 10px;
+}
+
+.pfp {
+    background-image: url('/media/rbd.png');
+    background-size: 100% 100%;
+}
+
+.intro {
+    display: flex;
+    padding: 0px;
+    background: #303030;
+    color: #ffffff;
+}
+
+.intro .pfp {
+    height: 300px;
+    width: 300px;
+    background-color:rgb(156, 53, 160);
+    border-radius: 0px 0px 50px 0px;
+    box-shadow: inset 0px -5px 10px 5px rgba(0,0,0,0.3);
+    transform: translateX(-30px);
+    transition-duration: 0.3s;
+}
+
+.intro .pfp:hover {
+    transform: translateX(0px);
+}
+
+.content * {
+    width: 100%;
+}
+
+.time {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 20px);
+}
+
+.big {
+    font-size: 72px;
+    margin: 0;
+}
