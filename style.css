@@ -62,7 +62,7 @@ section {
 }
 
 .pfp {
-    background-image: url('/media/rbd.png');
+    background-image: url('./rbd.png');
     background-size: 100% 100%;
 }
 
