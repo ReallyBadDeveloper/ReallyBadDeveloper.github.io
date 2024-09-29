@@ -1,16 +1,16 @@
 @font-face {
     font-family: Lexend;
-    src: url('.Lexend.ttf');
+    src: url('./Lexend.ttf');
 }
 
 @font-face {
     font-family: Nunito;
-    src: url('.Nunito.ttf');
+    src: url('./Nunito.ttf');
 }
 
 @font-face {
     font-family: Nunito Italic;
-    src: url('.NunitoItalic.ttf');
+    src: url('./NunitoItalic.ttf');
 }
 
 body {
