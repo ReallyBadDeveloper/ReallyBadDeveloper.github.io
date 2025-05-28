@@ -1,107 +1,156 @@
-@font-face {
-    font-family: Lexend;
-    src: url('./Lexend.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Chivo Mono, monospace;
+    color: white;
 }
 
-@font-face {
-    font-family: Nunito;
-    src: url('./Nunito.ttf');
-}
-
-@font-face {
-    font-family: Nunito Italic;
-    src: url('./NunitoItalic.ttf');
+::selection {
+    color: white;
+    background-color: #bb2dd7;
 }
 
 body {
-    font-family: Nunito, sans-serif;
-    padding: 0;
+    overflow: hidden;
     margin: 0;
-    width: 100vw;
-    padding-top: 50px;
-    background-color: #303030;
-    color: white;
-}
-h1,h2,h3,h4,h5,h6 {
-    font-family: Lexend, sans-serif;
-}
-
-titlebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(249, 85, 255);
-    color: white;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
-    z-index: 100;
-}
-
-a, a:visited {
-    margin: 0;
-    color: white;
-    text-decoration: underline;
-    box-shadow: inset 0px 0px 0px 0px white;
-    transition: text-decoration 0.3s;
-}
-a:hover, a:active {
-    text-decoration: none;
-}
-
-pad {
-    padding: 5px;
-}
-
-section {
-    width: 100vw;
-    padding: 10px;
-}
-
-.pfp {
-    background-image: url('./rbd.png');
-    background-size: 100% 100%;
-    height: 300px;
-    width: 300px;
-}
-
-.intro {
-    display: flex;
-    padding: 0px;
-    background: #303030;
-    color: #ffffff;
-}
-
-.intro .pfp {
-    height: 300px;
-    width: 300px;
-    background-color:rgb(156, 53, 160);
-    border-radius: 0px 0px 50px 0px;
-    box-shadow: inset 0px -5px 10px 5px rgba(0,0,0,0.3);
-    transform: translateX(-30px);
-    transition-duration: 0.3s;
-}
-
-.intro .pfp:hover {
-    transform: translateX(0px);
-}
-
-.content * {
-    width: 100%;
-}
-
-.time {
-    background-color: #141414;
+    background-image: linear-gradient(139deg, rgba(38, 0, 38, 0.9) 0%, rgba(13, 0, 43, 0.9) 100%), url('./background.png');
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100vw - 20px);
+    height: 100vh;
+    background-size: cover;
 }
 
-.big {
-    font-size: 72px;
-    margin: 0;
+.container {
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ffffff43;
+    box-shadow: inset 0px 0px 50px 0px #ffffff1a, 0px 0px 5px 0px #ffffff26;
+    backdrop-filter: blur(5px);
+    background: #0000000f;
+}
+
+.flex {
+    display: flex;
+}
+
+.pfp {
+    padding-left: 20px;
+    transition-duration: 0.2s;
+    cursor: help;
+    width: 300px;
+    height: 300px;
+}
+
+.pfp:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.bg {
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+a {
+    background: #bb2dd700;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    background: #bb2dd7;
+}
+
+.link {
+    cursor: pointer;
+    fill: #ffffff;
+    background-color: #00000000 !important;
+    margin-right: 10px;
+    transition-duration: 0.2s;
+}
+
+.tiktok:hover {
+    fill: #ff0050;
+}
+
+.discord:hover {
+    fill: #5865F2;
+}
+
+.itch:hover {
+    fill: #fa5c5c;
+}
+
+.settings {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ffffff43;
+    box-shadow: inset 0px 0px 50px 0px #ffffff1a, 0px 0px 5px 0px #ffffff26;
+    backdrop-filter: blur(5px);
+    background: #0000000f;
+}
+
+.settings:hover {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ffffff84;
+    box-shadow: inset 0px 0px 50px 0px #ffffff55, 0px 0px 5px 0px #ffffff55;
+    backdrop-filter: blur(5px);
+    background: #0000000f !important;
+}
+
+.settings:active {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ffffffb6;
+    box-shadow: inset 0px 0px 50px 0px #ffffff97, 0px 0px 5px 0px #ffffff97;
+    backdrop-filter: blur(5px);
+    background: #0000000f !important;
+}
+
+.settingsmenu {
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    display: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 7.5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #bb2dd7;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #bb2dd7;
+    border: none;
+    cursor: pointer;
 }

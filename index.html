@@ -1,32 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Really Bad Dev</title>
-    <link rel="icon" type="image/x-icon" href="/icon.ico">
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <titlebar>
-      <a href="/"><h2>Really Bad Dev</h2></a><pad></pad>
-      <a href="/contact">Contact</a><pad></pad>
-      <a href="/projects">Projects</a><pad></pad>
-      <a href="/status">Server Status</a><pad></pad>
-    </titlebar>
-    <section class="intro">
-      <div class="pfp"></div>
-      <pad></pad>
-      <div class="content">
-        <h1>Hi. I'm Really Bad Dev.</h1>
-        <p>I'm a student developer from Michigan that enjoys web development and making mods for Unity games. I also do graphic design work and developing backends for various projects.<br>In my free time, I like playing games like Rounds, Geometry Dash, Team Fortress 2, Minecraft, and Bopl Battle.<br><br>This site was built off of pure HTML, CSS, and JavaScript.<br><br>I run the <a href="https://discord.gg/official-bopl-battle-modding-community-1175164882388275310">Bopl Battle Modding Community</a> and used to run <a href="https://www.youtube.com/@BoplBattleClipsOfficial">a YouTube channel</a> that posts daily Bopl Battle clips/content.</p>
-      </div>
-    </section>
-    <!--
-    <pad></pad>
-    <section class="time">
-      <div><p>The time for me is </p><h1 class="big" id="time">00:00.00</h1></div>
-    </section> -->
-  </body>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Really Bad Dev</title>
+	<link rel="icon" type="image/x-icon" href="./icon.ico">
+	<link rel="stylesheet" href="./style.css" />
+	<script src="./stars.js" defer></script>
+	<script src="./settings.js" defer></script>
+</head>
+
+<body>
+	<canvas class="bg"></canvas>
+	<div class="container">
+		<div class="flex">
+			<div>
+				<h1>hi there!</h1>
+				<p>
+					i'm <a href="https://github.com/ReallyBadDeveloper"
+						title="i'm actually not that bad i promise (click to visit github)" target="_blank"
+						rel="noopener noreferrer">really bad dev</a> (rbd for short).<br>
+					i'm a game developer from michigan that really likes <a href="https://godotengine.org/"
+						target="_blank" rel="noopener noreferrer" title="click to visit website">godot</a>.<br>
+					i use arch btw (specifically <a href="https://endeavouros.com/" target="_blank"
+						rel="noopener noreferrer" title="click to visit website">endeavouros</a>).<br>
+					i know css, javascript, c#, html, gdscript, and some java.<br>
+					i've been programming for over 3 years (earlier if you count scratch).<br>
+					here are some links:
+				</p>
+				<div class="flex">
+					<a class="link tiktok" href="https://www.tiktok.com/@reallybaddev" target="_blank"
+						rel="noopener noreferrer">
+						<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="48"
+							height="48">
+							<title>TikTok</title>
+							<path id="Background" fill-rule="evenodd" class="s0"
+								d="m540 1080c-298.6 0-540-241.4-540-540 0-298.6 241.4-540 540-540 298.6 0 540 241.4 540 540 0 298.6-241.4 540-540 540zm308-723.5c-8.1 0-16.3-0.6-24.3-1.8-8-1.2-16-3-23.8-5.3-7.8-2.3-15.4-5.3-22.7-8.7-7.4-3.5-14.5-7.4-21.3-11.9-9.6-6.2-18.5-13.3-26.6-21.3-8.2-8-15.5-16.8-21.8-26.2-6.4-9.5-11.7-19.6-16-30.1-4.4-10.6-7.6-21.5-9.7-32.7q-0.7-3.8-1.2-7.6-0.4-3.8-0.8-7.6-0.3-3.8-0.4-7.6-0.2-3.9-0.1-7.7h-121v480.4c0 44.3-28.5 83.7-70.6 97.5-42.2 13.8-88.4-1.1-114.7-36.8-26.2-35.8-26.5-84.4-0.7-120.5 25.8-36 71.9-51.4 114.2-38.1v-123.6c-92.3-12.8-182.8 33-227.2 115-44.3 82-33.1 182.8 28 253.1 61.2 70.3 159.6 95.3 246.8 62.6 87.3-32.7 145.1-116 145.2-209.2v-245.8c12.2 8.8 25 16.6 38.4 23.3 13.5 6.7 27.4 12.4 41.7 17 14.3 4.6 28.9 8 43.8 10.3 14.8 2.3 29.8 3.4 44.8 3.4z" />
+						</svg>
+					</a>
+					<a class="link discord" href="https://discord.gg/kmradeEHnW" target="_blank"
+						rel="noopener noreferrer">
+						<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="48"
+							height="48">
+							<title>Discord</title>
+							<path id="Background" fill-rule="evenodd" class="s0"
+								d="m540 1080c-298.6 0-540-241.4-540-540 0-298.6 241.4-540 540-540 298.6 0 540 241.4 540 540 0 298.6-241.4 540-540 540zm258-775.2q-0.1-0.1-0.2-0.3-0.1-0.1-0.2-0.2-0.2-0.1-0.3-0.2-0.1-0.1-0.3-0.2-18-8.3-36.5-15.4-18.5-7-37.5-12.9-18.9-5.9-38.2-10.5-19.3-4.7-38.8-8.1-0.4 0-0.7 0-0.4 0.1-0.7 0.2-0.3 0.2-0.6 0.4-0.3 0.3-0.4 0.6-2.6 4.7-5.1 9.5-2.5 4.7-4.8 9.6-2.4 4.8-4.6 9.7-2.2 4.9-4.3 9.9-21.1-3.2-42.3-4.9-21.2-1.6-42.5-1.6-21.3 0-42.5 1.6-21.3 1.7-42.3 4.9-2.1-5-4.4-9.9-2.2-4.9-4.6-9.7-2.4-4.9-4.9-9.6-2.6-4.8-5.2-9.5-0.2-0.3-0.5-0.6-0.2-0.2-0.6-0.4-0.3-0.1-0.6-0.2-0.4 0-0.7 0-19.6 3.4-38.9 8-19.2 4.7-38.2 10.6-18.9 5.8-37.4 12.9-18.5 7.1-36.5 15.4-0.2 0.1-0.3 0.2-0.2 0.1-0.3 0.2-0.1 0.1-0.2 0.2-0.2 0.1-0.2 0.3c-96.2 143.8-122.6 284.1-109.6 422.7q0 0.2 0.1 0.5 0 0.2 0.2 0.4 0.1 0.2 0.3 0.4 0.1 0.2 0.3 0.4 21 15.5 43.2 29.2 22.2 13.8 45.5 25.5 23.3 11.8 47.4 21.6 24.2 9.7 49.2 17.4 0.3 0.1 0.7 0.1 0.4 0 0.7-0.1 0.4-0.1 0.7-0.3 0.3-0.2 0.5-0.5 5.3-7.3 10.4-14.9 5-7.5 9.8-15.2 4.7-7.7 9.2-15.6 4.4-7.9 8.5-16 0.2-0.5 0.2-1 0-0.5-0.1-1-0.2-0.4-0.6-0.8-0.3-0.3-0.8-0.5-7.5-2.9-14.9-6-7.4-3.2-14.6-6.7-7.2-3.4-14.3-7.2-7.1-3.7-14.1-7.7-0.5-0.3-0.8-0.8-0.3-0.5-0.4-1.1 0-0.6 0.3-1.2 0.2-0.5 0.7-0.9c3.9-2.9 7.8-5.9 11.5-9q0.2-0.2 0.5-0.3 0.3-0.1 0.6-0.2 0.3 0 0.7 0 0.3 0.1 0.6 0.2c121.4 55.5 252.8 55.5 372.8 0q0.3-0.1 0.6-0.2 0.3 0 0.6 0 0.4 0 0.7 0.2 0.3 0.1 0.5 0.3c3.7 3.1 7.6 6.1 11.5 9q0.5 0.4 0.8 0.9 0.2 0.6 0.2 1.2-0.1 0.6-0.4 1.1-0.3 0.5-0.8 0.8-6.9 4-14 7.8-7.1 3.7-14.3 7.2-7.3 3.5-14.7 6.6-7.4 3.1-14.9 6-0.4 0.1-0.8 0.5-0.4 0.4-0.5 0.8-0.2 0.5-0.2 1 0 0.5 0.3 1 4.1 8 8.6 15.9 4.4 7.9 9.2 15.6 4.7 7.7 9.7 15.3 5 7.5 10.3 14.8 0.2 0.3 0.5 0.6 0.3 0.2 0.7 0.3 0.3 0.1 0.7 0.1 0.4 0 0.7-0.1 25-7.6 49.2-17.4 24.3-9.7 47.6-21.5 23.3-11.8 45.6-25.5 22.2-13.7 43.2-29.3 0.2-0.2 0.3-0.3 0.2-0.2 0.3-0.5 0.2-0.2 0.2-0.4 0.1-0.3 0.1-0.5c15.5-160.2-25.9-299.3-109.6-422.7zm-381.1 338.3c-36.9 0-66.7-33.5-66.7-74.9 0-41.3 29.8-74.8 66.7-74.8 36.9 0 66.7 33.5 66.7 74.8 0 41.4-29.8 74.9-66.7 74.9zm246.5 0c-36.9 0-66.7-33.5-66.7-74.9 0-41.3 29.8-74.8 66.7-74.8 36.9 0 66.7 33.5 66.7 74.8 0 41.4-29.8 74.9-66.7 74.9z" />
+						</svg>
+					</a>
+					<a class="link itch" href="https://reallybaddev.itch.io/" target="_blank" rel="noopener noreferrer">
+						<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="48"
+							height="48">
+							<title>Itch.io</title>
+							<path id="Background" fill-rule="evenodd" class="s0"
+								d="m540 1080c-298.6 0-540-241.4-540-540 0-298.6 241.4-540 540-540 298.6 0 540 241.4 540 540 0 298.6-241.4 540-540 540zm-295.7-895.5c-34.9 20.7-103.7 99.7-104.3 120.4v34.3c0 43.5 40.6 81.7 77.5 81.7 44.3 0 81.2-36.7 81.2-80.4 0 43.6 35.7 80.4 80 80.4 44.3 0 78.7-36.7 78.7-80.4 0 43.6 37.9 80.4 82.2 80.4h0.8c44.3 0 82.2-36.7 82.2-80.4 0 43.6 34.5 80.4 78.7 80.4 44.3 0 80-36.7 80-80.4 0 43.6 36.9 80.4 81.2 80.4 36.9 0 77.5-38.2 77.5-81.7v-34.3c-0.6-20.7-69.4-99.7-104.3-120.5-108.4-3.8-183.6-4.4-295.6-4.4-112.1 0-264.9 1.8-295.8 4.5zm212.4 214.5c-35.4 61.7-125.2 62.2-160.4 0.4-21.2 37.2-69.4 51.5-90 44.4-6.2 64.6-22 381.1 28.5 432.5 128.5 30 485.3 29.1 610.1 0 50.9-51.8 34.3-372.8 28.5-432.5-20.7 7.2-68.8-7.3-89.9-44.4-35.4 61.9-125.1 61.2-160.5-0.4-11.4 20.1-37 46.5-83.1 46.5-8.4 0.3-16.7-0.6-24.8-2.6-8.1-2-15.9-5-23.2-9.1-7.3-4.1-14-9.1-20-15-5.9-5.9-11-12.5-15.2-19.8zm-67.3 87.5c26.5 0 50 0 79.2 32q17.7-1.8 35.4-2.7 17.8-0.9 35.5-0.9 17.8 0 35.5 0.9 17.8 0.9 35.4 2.7c29.3-31.8 52.8-31.8 79.3-31.8 84.2 0 104.9 125.3 134.9 233.4 27.8 100.4-8.9 102.9-54.6 103-67.8-2.6-105.4-52-105.4-101.5-63.1 10.4-163.9 14.2-250.2 0 0 49.5-37.6 98.9-105.4 101.5-45.7-0.1-82.3-2.6-54.6-103 30.1-108.3 50.8-233.4 135-233.6zm150.2 77.4q0 0 0 0 0 0 0 0zm-84.3 89.2l46.7-1.9v40.9c0 2.5 34.3 0.3 37.5 0.3 18.8 0.9 37.5 1.6 37.5-0.3v-40.8l46.7 1.9c-12.9-23.4-84.2-89.2-84.1-89.3-0.1 0.1-71.4 65.9-84.3 89.2z" />
+						</svg>
+					</a>
+				</div>
+				<p>
+					this website was made using plain html, css, and js, no framework shenannigans.<br>
+					hosted using <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">github
+						pages</a> (you can peek at the code <a
+						href="https://github.com/ReallyBadDeveloper/ReallyBadDeveloper.github.io" target="_blank"
+						rel="noopener noreferrer">here</a>).<br>
+					(btw you can adjust the star count in the settings)
+				</p>
+			</div>
+			<img src="pfp_no_bg.png" class="pfp" title="look mom it's me">
+		</div>
+	</div>
+	<a href="#" class="settings">
+		<svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			width="48" height="48" viewBox="0 0 45.973 45.973" xml:space="preserve">
+			<g>
+				<g>
+					<path d="M43.454,18.443h-2.437c-0.453-1.766-1.16-3.42-2.082-4.933l1.752-1.756c0.473-0.473,0.733-1.104,0.733-1.774
+			c0-0.669-0.262-1.301-0.733-1.773l-2.92-2.917c-0.947-0.948-2.602-0.947-3.545-0.001l-1.826,1.815
+			C30.9,6.232,29.296,5.56,27.529,5.128V2.52c0-1.383-1.105-2.52-2.488-2.52h-4.128c-1.383,0-2.471,1.137-2.471,2.52v2.607
+			c-1.766,0.431-3.38,1.104-4.878,1.977l-1.825-1.815c-0.946-0.948-2.602-0.947-3.551-0.001L5.27,8.205
+			C4.802,8.672,4.535,9.318,4.535,9.978c0,0.669,0.259,1.299,0.733,1.772l1.752,1.76c-0.921,1.513-1.629,3.167-2.081,4.933H2.501
+			C1.117,18.443,0,19.555,0,20.935v4.125c0,1.384,1.117,2.471,2.501,2.471h2.438c0.452,1.766,1.159,3.43,2.079,4.943l-1.752,1.763
+			c-0.474,0.473-0.734,1.106-0.734,1.776s0.261,1.303,0.734,1.776l2.92,2.919c0.474,0.473,1.103,0.733,1.772,0.733
+			s1.299-0.261,1.773-0.733l1.833-1.816c1.498,0.873,3.112,1.545,4.878,1.978v2.604c0,1.383,1.088,2.498,2.471,2.498h4.128
+			c1.383,0,2.488-1.115,2.488-2.498v-2.605c1.767-0.432,3.371-1.104,4.869-1.977l1.817,1.812c0.474,0.475,1.104,0.735,1.775,0.735
+			c0.67,0,1.301-0.261,1.774-0.733l2.92-2.917c0.473-0.472,0.732-1.103,0.734-1.772c0-0.67-0.262-1.299-0.734-1.773l-1.75-1.77
+			c0.92-1.514,1.627-3.179,2.08-4.943h2.438c1.383,0,2.52-1.087,2.52-2.471v-4.125C45.973,19.555,44.837,18.443,43.454,18.443z
+			 M22.976,30.85c-4.378,0-7.928-3.517-7.928-7.852c0-4.338,3.55-7.85,7.928-7.85c4.379,0,7.931,3.512,7.931,7.85
+			C30.906,27.334,27.355,30.85,22.976,30.85z" />
+				</g>
+			</g>
+		</svg>
+	</a>
+	<div class="container settingsmenu">
+		<label for="starcount">star count: </label><br>
+		<input type="range" id="starcount" min="0" max="300" value="150" step="5">
+	</div>
+</body>
+
 </html>
