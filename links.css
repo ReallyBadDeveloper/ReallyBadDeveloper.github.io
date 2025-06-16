@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 15px;
+    overflow: hidden;
+    background-image: linear-gradient(139deg, rgba(38, 0, 38, 0.9) 0%, rgba(13, 0, 43, 0.9) 100%), url('./background.png');
+    height: 100vh;
+    align-items: center;
+    background-size: cover;
+}
+
+.container {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffffff43;
+    box-shadow: inset 0px 0px 50px 0px #ffffff1a, 0px 0px 5px 0px #ffffff26;
+    backdrop-filter: blur(5px);
+    background: #0000000f;
+}
+
+.flex {
+    display: flex;
+}
+
+.pfp {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+* {
+    font-family: Chivo Mono, monospace;
+    color: white;
+}
+
+::selection {
+    color: white;
+    background-color: #bb2dd7;
+}
+
+a {
+    background: #bb2dd700;
+    transition-duration: 0.2s;
+}
+
+a:hover, a:active {
+    background: #bb2dd7;
+}
